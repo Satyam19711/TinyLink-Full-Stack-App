@@ -1,0 +1,166 @@
+.links-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.links-table th,
+.links-table td {
+  padding: 12px 14px;
+  height: 48px;
+  vertical-align: middle;
+  font-size: 14px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.links-table th {
+  background-color: #f7f9fc;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.links-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.links-table tr:hover {
+  background-color: #eef4ff;
+}
+
+.links-table tr:last-child td {
+  border-bottom: none;
+}
+
+.clickable-code {
+  color: #0d6efd;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clickable-code:hover {
+  text-decoration: underline;
+}
+
+.url-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin-top: 36px;
+}
+
+.url-text {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+.copy-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.copy-btn:hover {
+  background-color: #0956c7;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.links-cards {
+  display: none;
+}
+
+.links-cards {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .links-table {
+    display: none;
+  }
+
+  .links-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .link-card {
+    background: white;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .card-label {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .card-code {
+    color: #0d6efd;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .card-code:hover {
+    text-decoration: underline;
+  }
+
+  .card-url {
+    max-width: 65%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .copy-btn,
+  .delete-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
