@@ -4,7 +4,6 @@ import Dashboard from "./pages/Dashboard";
 import StatsPage from "./pages/StatsPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./app.css";
 
 function App() {
   return (
