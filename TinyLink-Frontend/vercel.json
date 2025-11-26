@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:code",
+      "destination": "https://tinylink-full-stack-app.onrender.com/:code"
+    }
+  ]
+}
